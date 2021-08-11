@@ -1,0 +1,117 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*------------ VARIABLES --------------------*/
+html {
+  font-size: 62.5%;
+
+  /* color mode */
+  --body-color: whitesmoke;
+  --base-color: #3485ff;
+  --title-color: #0d114f;
+  --text-color-atl: #4d5e77;
+  --text-color-light: #fafafa;
+  --border-color: #a1b2cd;
+
+  /*font-size*/
+  --font-size: 2.8rem;
+  --item-font-size: 1.6rem;
+}
+
+/*------------ BODY --------------------*/
+
+body {
+  height: 100vh;
+  display: flex;
+  background: var(--body-color);
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+/*****************************************************************************/
+input {
+  border: 0.2rem solid var(--text-color-atl);
+  padding: 0 1.6rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+}
+
+/*****************************************************************************/
+
+button,
+.button {
+  height: 5rem;
+  border-radius: 0.8rem;
+}
+
+button,
+.button {
+  font-family: 'Poppins';
+  font-weight: 500;
+  line-height: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  filter: brightness(1.2);
+  transition: 0.3s;
+}
+
+.button.outlined {
+  background: var(--text-color-light);
+  color: var(--base-color);
+  border: 0.2rem solid var(--base-color);
+}
+
+button > img,
+.button > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+/*****************************************************************************/
+.content header {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.content header img {
+  width: 16.7rem;
+}

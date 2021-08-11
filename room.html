@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/room.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Rocket.Q</title>
+  </head>
+
+  <body>
+    <div id="room" class="content">
+      <header>
+        <a href="">
+          <img src="./assets/image/Logo.svg" alt="Logo Rocket.Q" />
+        </a>
+        <div class="buttons">
+          <div class="button outlined">
+            #323243
+            <img src="./assets/icon/copy.svg" alt="Copy number room" />
+          </div>
+          <a href="#" class="button">
+            <img src="./assets/icon/users white.svg" alt="Create new room" />
+            Criar Sala
+          </a>
+        </div>
+      </header>
+      <main>
+        <section id="question-form">
+          <h2>Faça sua pergunta</h2>
+          <form action="">
+            <label class="sr-only" for-id="question"
+              >O que vc quer perguntar?</label
+            >
+            <textarea
+              id="question"
+              name="question"
+              placeholder="Faça sua pergunta"
+            ></textarea>
+            <footer>
+              <div>
+                <img src="./assets/icon/lock_black.svg" alt="Lock" />Essa
+                pergunta é anônima
+              </div>
+              <button>Enviar</button>
+            </footer>
+          </form>
+        </section>
+        <section id="questions">
+          <h2 class="sr-only">Peruntas da comunidade</h2>
+          <div class="questions">
+            <div class="question-wrapper">
+              <div class="question-content">
+                <div class="user">
+                  <img src="./assets/icon/Avatar.svg" alt="Avatar" />
+                </div>
+                <div class="question"></div>
+                <div class="actions">
+                  <a href="#" class="check">
+                    <img
+                      src="./assets/icon/check 1.svg"
+                      alt="Marcar como lido"
+                    />Marcar como lida
+                  </a>
+                  <a href="#" class="delete">
+                    <img src="./assets/icon/trash 1.svg" alt="Delete" />Excluir
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
